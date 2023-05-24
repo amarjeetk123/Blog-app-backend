@@ -10,9 +10,9 @@ const postSchema = new mongoose.Schema({
         type:String,
         required : [true , "title is required"]
     },
-    username:{ 
-        type : String ,
-    }
+    // username:{ 
+    //     type : String ,
+    // }
 
 },
 

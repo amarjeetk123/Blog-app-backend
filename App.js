@@ -14,7 +14,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 
+
+
 const PORT = process.env.PORT || 3600
 app.listen(PORT,()=>{
     console.log("APP is running at port number:-" , PORT)
 })
+
+const userRoutes = require("./routes/postRoutes")
+app.use("/" , userRoutes)

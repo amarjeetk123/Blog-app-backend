@@ -5,9 +5,9 @@ exports.createPost = async (req, res) => {
 
     try {
         const { username, title, description, photo } = req.body
-        if (!username) {
-            return res.status(404).send("username is required")
-        }
+        // if (!username) {
+        //     return res.status(404).send("username is required")
+        // }
         if (!title) {
             return res.status(404).send("title is required to crete a post")
         }
